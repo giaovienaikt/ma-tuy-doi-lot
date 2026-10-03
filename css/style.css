@@ -410,3 +410,18 @@ header.dau .logo, header.dau .logo .chu-logo { color: #fff !important; text-shad
 .thu .chao { font-family: "Dancing Script", cursive; font-size: 30px; font-weight: 600; }
 .thu .ky { font-family: "Dancing Script", cursive; font-size: 32px; font-weight: 700; text-align: right; margin-right: 30px; color: #13294b; }
 .thu .xac-nhan { margin-top: 14px; padding-top: 10px; border-top: 2px dashed #c9b98a; font-size: 20px; }
+
+/* điện thoại: Cú Tỉnh đứng thành một hàng riêng ở cuối màn, không đè lên nội dung bài */
+@media (max-width: 760px) {
+  .man { padding-bottom: 18px; }
+  .cu-goc, .cu-goc.trai, .man-chuong .cu-goc { position: relative; right: auto; left: auto; bottom: auto; z-index: 3;
+    flex-direction: row; justify-content: flex-end; align-items: flex-end; margin: 14px 0 0; }
+  .cu-goc img { width: 76px; }
+  .cu-goc .bong { max-width: none; flex: 1; font-size: 14px; margin-bottom: 18px; border-radius: 16px 16px 4px 16px; }
+  .man-chuong { flex-direction: column; align-items: stretch; min-height: 0; }
+  .man-chuong .cu-goc { padding: 0 16px 0 16px; margin-top: -12px; }
+  .man-chuong .cu-goc img { width: 110px; }
+  .man-chuong .bong { font-size: 15px; max-width: none; }
+  .chuong-nd { padding: 26px 20px 8px; }
+  .man-chuong::after { background: linear-gradient(180deg, rgba(8,14,28,.9) 0%, rgba(8,14,28,.75) 60%, rgba(8,14,28,.45) 100%); }
+}
