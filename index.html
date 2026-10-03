@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ma túy đội lốt</title>
+<meta name="description" content="Bài giảng e-learning giáo dục phòng, chống ma túy dành cho học sinh THPT.">
+<link rel="stylesheet" href="font/font.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header class="dau">
+    <div class="logo"><div class="khien">🛡️</div><span class="chu-logo">MA TÚY ĐỘI LỐT</span></div>
+    <div class="chang-thanh" id="chang-thanh" aria-label="Tiến độ các chặng"></div>
+    <button class="nut-tron" id="nut-giao-dien" title="Đổi giao diện sáng/tối" aria-label="Đổi giao diện sáng tối">🌓</button>
+    <button class="nut-tron" id="nut-muc-luc" title="Mục lục" aria-label="Mục lục">☰</button>
+  </header>
+  <main id="san-khau" aria-live="polite"></main>
+  <div class="phu-de" id="phu-de" aria-live="polite"></div>
+  <footer class="chan">
+    <button class="nut phu" id="nut-lui" aria-label="Quay lại">◀ <span class="an-dt">Quay lại</span></button>
+    <button class="nut-tron" id="nut-loa" title="Nghe lại lời giảng" aria-label="Nghe lại lời giảng">🔊</button>
+    <button class="nut-tron" id="nut-cc" title="Bật/tắt phụ đề" aria-label="Bật tắt phụ đề">CC</button>
+    <div class="so-man" id="so-man"></div>
+    <button class="nut tiep" id="nut-tiep" aria-label="Tiếp">Tiếp ▶</button>
+  </footer>
+</div>
+<div id="muc-luc" role="dialog" aria-label="Mục lục"><div class="ngan" id="ngan-muc-luc"></div></div>
+<div id="in"></div>
+<audio id="loa" preload="auto"></audio>
+<script src="js/noi-dung.js"></script>
+<script src="am/danh-sach.js"></script>
+<script src="video/moc.js"></script>
+<script src="js/scorm.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
